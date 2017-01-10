@@ -1,0 +1,285 @@
+html, body {
+    margin: 0px;
+    padding: 0px;	
+}
+html, body, #root {
+	height: 100%;
+}
+
+#root {
+	display: flex;
+	font-family: Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.contanier {
+	display: flex;
+	flex: 1;
+}
+
+.main_container {
+	display: flex;
+	flex: 5;
+}
+
+#categories {
+	background-color: #eee;
+}
+
+#categories, #contacts {
+	width: 250px;
+	border-right: 1px solid #d1d1d1;
+	overflow-y: hidden;
+	font-size: 14px;
+}
+
+#header p {
+	margin: 0px;
+	padding: 2px;
+	margin-left: 5px;
+}
+
+#categories ul, #contacts ul{
+	list-style: none;
+	overflow-y: scroll;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+#contacts ul {
+	margin-top: 5px;
+}
+
+#categories ul li, #contacts ul li{
+	padding: 5px;
+}
+
+#categories a, #contacts a{
+	text-decoration: none;
+	color: #000;
+	margin-left: 20px;
+}
+
+#contact_details {
+	flex: 3;
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+#user_details {
+	flex: 1;
+}
+
+#search {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	width: 200px;
+	margin-left: 20px;
+}
+
+#search_box{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #d1d1d1;
+    border-radius: 4px;
+    background-size: 15px 15px;
+    background-image: url('../images/search.png');
+    background-position: 10px 4px;
+    background-repeat: no-repeat;
+    padding: 5px 15px 3px 30px;
+}
+
+#user_details {
+	display: flex;
+	flex-direction: column;
+	color: #d9d9d9;
+	position: fixed:
+}
+
+#user_basic_info {
+	padding: 10px;
+	display: flex;
+	flex: 1;
+}
+
+#user_basic_info img {
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+}
+
+#user_basic_info div {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+#name {
+	font-size: 22px;
+}
+
+#name, #company{
+	flex: 1;
+	margin-left: 10px;
+}
+
+#user_other_info {
+	flex: 9;
+	padding: 10px;
+}
+
+.heading{
+	display: flex;
+	height: 40px;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+#note {
+	border: 0px;
+}
+
+#address {
+	display: flex;
+	height: 100px;
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.heading p{
+	width: 70px;
+}
+
+.heading input, .heading select {
+	border: 0px;
+	width: 150px;
+	margin-left: 10px;	
+	background-color: white;
+}
+
+input:focus, select:focus, button:focus { 
+    outline: none;
+}
+
+#address div {
+	display: flex;
+	border: 0px;
+	width: 150px;
+	margin-left: 10px;	
+	flex-direction: column;
+}
+
+#address div input {
+	flex: 1;
+	border: 0px;
+}
+
+#footer {
+	height: 30px;
+	padding: 10px;
+	display: flex;
+}
+
+#add {
+	width: 80%;
+}
+
+#add button{
+	text-align: center;
+    padding: 5px;
+    background: white;
+    border: 1px solid #d1d1d1;
+    width: 30px;
+    border-radius: 4px;
+}
+
+#done {
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
+	padding: 5px;
+	width: 50px;
+	text-align: center;
+    background: white;
+    color: #33AFFF;
+}
+
+#export {
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
+	padding: 5px;
+	width: 50px;
+	text-align: center;
+    background: white;
+    color: #33AFFF;
+    margin-left: 10px;
+}
+
+#add_data {
+	margin-left: 9px;
+	border: 1px solid #d1d1d1;
+	border-radius: 4px;
+	width: 180px;
+	background-color: #fff;
+	z-index: 100000;
+	position: absolute;
+	bottom: 45px;
+}
+
+#add_data ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;	
+	text-align: left;
+	cursor: pointer;
+}
+
+#add_data ul li {
+	padding: 3px;
+}
+
+.add_data_second_item {
+	border-bottom: 1px solid #d1d1d1;
+}
+
+.add_data_third_item {
+	color: #d1d1d1;
+}
+
+.add_category{
+    width: 150px;
+    margin-left: 20px;
+    border: 2px solid #d1d1d1;
+    border-radius: 4px;
+}
+
+.add_contact{
+    width: 150px;
+    margin-left: 20px;
+    border: 2px solid #d1d1d1;
+    border-radius: 4px;
+}
+
+button {
+	cursor: pointer;
+}
+
+#contacts select{
+	margin-left: 20px;
+	border-radius: 4px;
+	width: 150px;
+}
+
+#contacts button {
+	margin-left: 5px;
+	background-color: #d1d1d1;
+	border: 0px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.category_active {
+	background-color: #80ccff;
+}
+
+.contact_active {
+	background-color: #d1d1d1;
+}
